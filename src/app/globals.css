@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 247, 247, 247;
+  --background-start-rgb: 16, 28, 44;
+  --background-end-rgb: 11, 19, 31;
+  --accent-rgb: 201, 167, 109;
+  --text-muted-rgb: 136, 153, 170;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+  min-height: 100vh;
+}
+
+.font-space-grotesk {
+  font-family: var(--font-space-grotesk);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}

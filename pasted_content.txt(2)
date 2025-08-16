@@ -1,0 +1,69 @@
+
+✅ 1. O objetivo principal é realmente desenvolver o website institucional e outros elementos do plano de comunicação digital descrito?
+Sim. O objetivo principal é desenvolver o website institucional da A+ Group, dentro do ecossistema de comunicação 360°, integrando também os demais elementos (identidade visual, redes sociais, apresentações e materiais comerciais), mas com foco inicial no site, como pilar central da presença digital.
+
+✅ 2. Devo seguir a estrutura e as tecnologias sugeridas (Next.js/React, TailwindCSS, CMS)? Devo construir o site completo ou focar em seções específicas inicialmente?
+Sim, pode seguir a estrutura e tecnologias sugeridas, pois estão alinhadas com o posicionamento da marca (moderna, escalável, elegante). A sugestão de stack (Next.js + TailwindCSS + CMS como Notion, Sanity ou Webflow) é adequada.
+
+Plano ideal:
+
+Iniciar com protótipo completo das páginas principais (UI/UX): Home, Quem Somos, Projetos, Investidores, Contato.
+
+Em seguida, construir versão funcional (MVP) com as seções essenciais: Home + Projetos + Contato.
+
+✅ 3. Como você gostaria que as informações dos PDFs do projeto 'Jardim Guanabara' fossem utilizadas?
+As informações dos PDFs devem ser integradas à seção ‘Projetos’ do site, e também servem para:
+
+Página individual do projeto Jardim Guanabara, com:
+
+Galeria de imagens
+
+Vídeo imersivo
+
+Tabela de investimentos
+
+Texto do bloco “O que torna este projeto único?”
+
+Botão para download do PDF
+
+Botão “Agende visita”
+
+Além disso, podem alimentar:
+
+Um PDF interativo para WhatsApp e investidores
+
+Slides da apresentação comercial
+
+Conteúdo para redes sociais
+
+✅ 4. Há alguma parte do plano (website, identidade visual, redes sociais, apresentação comercial) que seja prioritária neste momento?
+Sim. Prioridade agora:
+
+Website institucional (UI + conteúdo + protótipo navegável)
+
+Em paralelo, PDF comercial para o projeto Jardim Guanabara
+
+Após isso: redes sociais e apresentação em pitch deck
+
+🔜 Resumo do plano de ação sugerido:
+Etapa 1 – Website UI/UX (protótipo completo com conteúdo)
+
+Estrutura de todas as páginas principais
+
+Design e copywriting
+
+Versão navegável (ex: Figma)
+
+Etapa 2 – MVP funcional
+
+Home + Projetos + Contato (desenvolvimento em Next.js/Tailwind)
+
+Etapa 3 – PDF Comercial Jardim Guanabara
+
+Design elegante e textual de impacto
+
+Etapa 4 – Identidade visual completa (se ainda não estiver 100% consolidada)
+
+Etapa 5 – Estratégia de redes sociais + cronograma editorial
+
+Etapa 6 – Pitch Deck completo para investidores

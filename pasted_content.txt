@@ -1,0 +1,85 @@
+Você é um especialista full-stack sênior em desenvolvimento web, com profundo conhecimento em HTML5, CSS3, JavaScript (ES6+), Git, GitHub e boas práticas de engenharia de software, incluindo Clean Code, otimização de performance, SEO e acessibilidade (WCAG).
+
+**Objetivo:**
+Seu objetivo é analisar o repositório público do GitHub para o projeto "Mostardinha" (cuja URL será fornecida) e gerar um conjunto abrangente de sugestões e correções para elevar significativamente a qualidade técnica, a performance, a usabilidade e a manutenibilidade do site. Você deve identificar problemas, propor soluções concretas e, onde possível, fornecer trechos de código corrigidos ou atualizados.
+
+**Contexto do Projeto:**
+O projeto é um site de landing page estático hospedado no GitHub Pages para divulgar e vender o livro digital "Mostardinha". Ele apresenta diversas seções como Hero, Jornada, Personagens, Músicas, Sabedoria, Quiz Interativo, Newsletter, Sobre o Autor, Editora, Bastidores, Vozes, Canal Parceiro (Mundo Ninus), Captura de Leads, uma seção "Mais do que uma História" e Compra. O site utiliza HTML, CSS (incorporado) e JavaScript (incorporado) para criar uma experiência rica e envolvente, com animações, efeitos parallax, player de áudio e interatividade.
+
+**Tarefas de Análise e Aprimoramento:**
+
+1.  **Análise Geral do Repositório:**
+    *   Avalie a estrutura geral de pastas e arquivos (`index.html`, `assets/`, etc.).
+    *   Verifique se há arquivos desnecessários, mal nomeados ou fora de padrão.
+    *   Avalie o estado atual do `index.html` quanto a validade HTML5 (tags abertas/fechadas corretamente, estrutura semântica, etc.).
+
+2.  **Correções Críticas de HTML/CSS/JS (Prioridade Máxima):**
+    *   **HTML:**
+        *   Identifique e corrija quaisquer erros de sintaxe HTML (ex: `>>` em tags de fechamento, tags não fechadas, aninhamento incorreto).
+        *   Verifique se todas as imagens referenciadas (`<img src="...">`) possuem caminhos corretos e arquivos correspondentes no repositório.
+        *   Certifique-se de que o `index.html` começa com `<!DOCTYPE html>` e possui estrutura `<html><head>...</head><body>...</body></html>` válida.
+    *   **CSS:**
+        *   Identifique e corrija erros de sintaxe CSS (ex: propriedades mal formadas como `!display: ...`).
+        *   Verifique se há duplicatas de tags `<style>` ou `<script>` no código.
+        *   Avalie a aplicação correta das variáveis CSS de cores (`--bg-primary`, `--bg-secondary`, `--bg-accent`) para garantir consistência visual nas seções.
+        *   Confirme se o espaçamento vertical das seções utiliza a variável `--section-padding-vertical` de forma consistente.
+    *   **JavaScript:**
+        *   Identifique e remova funções JavaScript duplicadas (ex: `initScrollTopButton`, `initMoreThanStorySection`, `createMoreSectionParallaxElements` definidas mais de uma vez no mesmo arquivo).
+        *   Certifique-se de que todas as funções de inicialização necessárias (como `initScrollTopButton`, `initMoreThanStorySection`, `createMoreSectionParallaxElements`) sejam chamadas dentro do listener `DOMContentLoaded` principal.
+        *   Corrija o uso incorreto de atribuição direta de eventos globais (ex: substituir `window.onclick = ...` por `window.addEventListener('click', ...)` dentro da função `initMoreThanStorySection`).
+        *   Verifique se há chamadas para `console.log` em produção que possam ser removidas ou substituídas por `console.debug`.
+
+3.  **Organização e Separação de Código (Melhor Prática):**
+    *   Avalie a viabilidade e os benefícios de separar o CSS e o JavaScript do `index.html` em arquivos externos (`style.css`, `script.js`).
+    *   Sugira como realizar essa separação de forma eficiente, incluindo:
+        *   Onde mover o conteúdo das tags `<style>` e `<script>`.
+        *   Como atualizar o `index.html` para linkar esses novos arquivos (`<link rel="stylesheet" href="style.css">`, `<script src="script.js" defer></script>`).
+        *   Como garantir que o CSS e JS continuem funcionando corretamente após a separação.
+
+4.  **Aprimoramento da Seção "🎵 Músicas Integradas à História" (`#musicas`):**
+    *   Analise o código HTML e CSS da seção `.music-section`.
+    *   Identifique por que os cards das músicas `#coragem`, `#gratidao` e `#alegria` não estão aparecendo visualmente como os outros dois (`#tema`, `#amizade`).
+    *   Forneça o código HTML e/ou CSS corrigido para garantir que todos os 5 cards de música (`#tema`, `#amizade`, `#coragem`, `#gratidao`, `#alegria`) sejam exibidos corretamente no grid, seguindo o mesmo estilo dos dois primeiros.
+
+5.  **Aprimoramento da Seção "Vozes que Encantam" (`#vozes`):**
+    *   Analise o código HTML da seção `.voices-section`.
+    *   Identifique onde e como inserir tags `<img>` para exibir as fotos reais dos dubladores nos cards `.voice-card`.
+    *   Forneça o código HTML modificado para os cards, assumindo que as fotos estejam em `assets/images/vozes/nome-do-dublador.formato`.
+    *   Inclua atributos `src`, `alt` e classes CSS apropriadas (ex: `voice-photo`).
+
+6.  **Correção de Alinhamento Visual:**
+    *   Analise o CSS das seções "Nos Bastidores" (`.behind-scenes` ou similar) e "Conheça o Canal Mundo Ninus" (`.mundoninus-section`).
+    *   Identifique as regras que estão causando o desalinhamento do conteúdo textual e da imagem (`.channel-logo` ou `.mundo-ninus-logo`).
+    *   Forneça o CSS corrigido para centralizar corretamente esses elementos dentro de suas respectivas seções.
+
+7.  **Correção de Imagem/Logo Faltando:**
+    *   Analise a tag `<img>` na seção `.mundoninus-section`.
+    *   Verifique se o caminho `src` está correto em relação à estrutura de pastas do projeto.
+    *   Confirme se o arquivo de imagem da logo (ex: `logo-mundoninus.png`) existe na pasta `assets/images/`.
+    *   Se o caminho ou o arquivo estiverem incorretos, forneça a correção necessária no HTML ou instruções para corrigir a estrutura do repositório.
+
+8.  **Otimização de Performance e SEO:**
+    *   Verifique se todas as imagens principais utilizam o atributo `loading="lazy"` (exceto a Hero).
+    *   Avalie se as meta tags (`description`, `og:title`, `og:description`, `og:image`, `twitter:card`, etc.) estão preenchidas de forma otimizada e descritiva.
+    *   (Opcional/Avançado) Sugira estratégias para otimizar o tamanho das imagens (WebP, compressão) e o carregamento de recursos (preload, prefetch).
+
+9.  **Relatório Final:**
+    *   Liste EXPLICITAMENTE os arquivos que precisam ser modificados.
+    *   Para cada modificação, explique clara e sucintamente o problema identificado e a solução proposta.
+    *   Priorize as correções críticas (HTML inválido, JS quebrando) antes das melhorias estéticas ou de organização.
+    *   Foque em soluções práticas, compatíveis com o uso do GitHub Pages e que melhorem a experiência do usuário final.
+
+**URL do Repositório do GitHub:**
+https://github.com/gabrieljaccoud/mostardinha-landing
+
+**Observação Final:**
+O código do site está em constante evolução conforme nossa conversa. Considere que o estado atual do repositório pode refletir uma versão com várias das correções e melhorias já aplicadas, mas ainda pode conter os problemas listados acima. Foque na análise do código *atual* no repositório.
+
+**Detalhamento das Correções Específicas Identificadas no JavaScript:**
+
+Após análise de conversas anteriores, as seguintes correções no JavaScript foram identificadas como necessárias e devem ser priorizadas:
+
+*   **Remoção de Duplicatas:** Identificar e remover definições duplicadas das funções `initScrollTopButton`, `initMoreThanStorySection` e `createMoreSectionParallaxElements`.
+*   **Integração Completa:** Garantir que as chamadas para `initScrollTopButton()`, `initMoreThanStorySection()` e `createMoreSectionParallaxElements()` estejam presentes e corretas dentro do bloco principal `document.addEventListener('DOMContentLoaded', ...)`.
+*   **Correção de Event Listeners:** Substituir atribuições diretas como `window.onclick = ...` por `window.addEventListener('click', ...)` dentro da função `initMoreThanStorySection`.
+*   **Limpeza de `console.log`:** (Opcional) Identificar e sugerir a remoção ou substituição de `console.log` por `console.debug` em funções como `trackButtonClick`.
